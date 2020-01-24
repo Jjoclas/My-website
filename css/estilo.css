@@ -1,0 +1,55 @@
+body{
+    height: 100%;
+    position: absolute;
+    width: 100vw;
+}
+.jc-container{
+    padding: 0;    
+}
+.navegacao{
+    background-color: #0A0121 ;
+    padding-top: 45px;
+    padding-bottom:90px; 
+    height: 20vh;
+}
+
+.logo-img{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: -30px;
+    left: 0px;
+}
+.lista-navegacao{
+    float: right;
+    background-color: #0A0121;
+    border-radius: 7px;
+}
+.titulo-home{
+    margin: 0px;
+}
+.first-page,
+.second-page,
+.third-page,
+.fourth-page{
+    background-size: cover;
+    background-position: center;
+    height: 80.5vh;
+            }
+
+.first-page{
+    background-image: url(../imagem/book.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 80.5vh;
+}
+.second-page{
+    position: relative;
+    background-image: url(../imagem/pc-mobile.jpg);
+}
+.third-page{
+    background-image: url(../imagem/nott.jpeg);
+    position: relative;
+    top: -80.5vh;
+    
+}

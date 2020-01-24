@@ -1,0 +1,6 @@
+.second-page:target{
+    transform: translateY(-80.5vh);
+    z-index: 1;
+    transition: 1s;
+    
+}
