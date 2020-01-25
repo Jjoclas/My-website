@@ -1,22 +1,28 @@
+var listaNav= document.querySelector(".lista-navegacao");
+var portifolio = document.querySelector(".second-page");
+var curriculo = document.querySelector(".third-page");
+var contato = document.querySelector(".fourth-page");
+var home = document.querySelector(".first-page");
+var paginas= [portifolio,curriculo,contato];
 
-$('.btn-portifolio').on('click', function (){
-    $(".second-page").css("transform", "translateY(-80.5vh)"),
-    $(".second-page").css("z-index", "1"),
-    $(".second-page").css("transition", " 1s")
- 
-    $(".third-page").css("transform", " translateY(80.5vh)"),
-    $(".third-page").css('z-index', "0"),
-    $(".second-page").css("z-index", "0")
 
-  })
-
-$('.btn-curriculo').on('click', function (){  
-    $(".third-page").css("transform", " translateY(-80.5vh)"), 
-    $(".third-page").css('z-index', "1"),
-    $(".third-page").css("transition", " 1s") 
-  
-    $(".second-page").css("transform", " translateY(80.5vh)"),
-    $(".second-page").css('z-index', "0"),     
-    $(".third-page").css('z-index', "0")   
-
+listaNav.addEventListener("click",function(event){
+  for(i=0;i<paginas.length;i++){ 
+    if(event.target.className==paginas[i].id){
+      aparecePagina(paginas[i]);
+    }else{
+      somePagina(paginas[i]);
+    }
+ }
 })
+
+function aparecePagina(pagina){
+  pagina.style.transform ="translateY(-80.5vh)";
+  pagina.style.zindex="1";
+  pagina.style.transition= "1s";
+}
+function somePagina(pagina){
+  pagina.style.transform="translateY(80.5vh)";
+  pagina.style.zindex="0";
+  pagina.style.transition= "1s";
+}

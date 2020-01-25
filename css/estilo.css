@@ -2,6 +2,7 @@ body{
     height: 100%;
     position: absolute;
     width: 100vw;
+    
 }
 .jc-container{
     padding: 0;    
@@ -35,8 +36,7 @@ body{
     background-size: cover;
     background-position: center;
     height: 80.5vh;
-            }
-
+}
 .first-page{
     background-image: url(../imagem/book.jpeg);
     background-size: cover;
@@ -44,12 +44,24 @@ body{
     height: 80.5vh;
 }
 .second-page{
-    position: relative;
     background-image: url(../imagem/pc-mobile.jpg);
 }
 .third-page{
     background-image: url(../imagem/nott.jpeg);
     position: relative;
     top: -80.5vh;
-    
+}
+.fourth-page{
+    background-image: url(../imagem/globo.jpeg);
+    position: relative;
+    top: -161vh;
+}
+.non-active{
+    top: 100.5vh;  
+    z-index: 0;
+}
+.active-section{
+    transform: translateY(-80.5vh);
+    transition: 1s;
+    z-index: 1;
 }
